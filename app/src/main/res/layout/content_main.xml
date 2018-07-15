@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.portfolio.aungkhanthtoo.healthcare.components.SmartRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutAnimation="@anim/layout_anim_fall_in"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/rvHealth"
+    android:background="#F5f5f5"
+    android:scrollbars="none"
+    tools:listitem="@layout/health_item_layout"
+    android:clipToPadding="false"
+    android:paddingTop="16dp"
+    tools:context=".activities.MainActivity"
+    tools:showIn="@layout/activity_main"/>
+

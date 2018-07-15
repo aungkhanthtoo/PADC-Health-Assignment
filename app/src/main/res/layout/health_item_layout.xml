@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?selectableItemBackground"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <org.mmtextview.components.MMTextView
+        style="?android:textAppearanceMedium"
+        android:id="@+id/tvHealthItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:textSize="16sp"
+        tools:text="ညနက္တဲ႔အထိ ေဖ႔စ္ဘုတ္သံုးသူမ်ားသတိထား"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <me.portfolio.aungkhanthtoo.healthcare.components.TwoOneImageView
+        android:id="@+id/ivHealthItem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHealthItemTitle" />
+
+    <TextView
+        android:id="@+id/tvHealthItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="2016"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHealthItemDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHealthItem"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvHealthItemAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:layout_marginTop="8dp"
+        android:text="ေစာႏြဲ ့ေနဆိုင္ - ပူတာအ"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHealthItemDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHealthItem"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <org.mmtextview.components.MMTextView
+        android:id="@+id/tvHealthItemDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="40dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.5"
+        android:maxLines="3"
+        android:text="လူသားေတြအတြက္ အေကာင္းဆံုး အိပ္စက္အနားယူခ်ိန္ဟာ ည ၁၁ နာရီမွ မနက္ ၃ နာရီအတြင္းျဖစ္တယ္လို့ သိရပါတယ္။ ၁၁-၃ အတြင္း အနားမယူပဲ အလုပ္တစ္ခုခု လုပ္ေနမယ္ဆိုရင္ က်နး္မာေရးကို ထိခိုက္ေစလိမ့္မယ္။ အေၾကာင္းကေတာ့ လူ့ခႏၶာကိုယ္ထဲမွာ အဓိကအေရးၾကီးဆံုး အလုပ္လုပ္ေပးေနတဲ့ အသည္းဟာ ၁၁-၃ အခ်ိန္မွာ လူတို့စားသံုးထားတဲ့ အစားအစာမ်ားထဲမွ အဆိပ္အေတာက္နဲ့ မလိုအပ္တဲ့အရာမ်ားကို စစ္ထုတ္ေပးေနရလို့ပါပဲ။ ေဖ့စ္ဘုတ္တစ္ခုတည္းမဟုတ္ပဲ အျခား ဘာပဲလုပ္လုပ္ အဲဒီအခ်ိန္မွာ မအိပ္ရင္ အသည္းရဲ့ လုပ္ေဆာင္ခ်က္မ်ားကို ထိခိုက္ေစပါတယ္"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHealthItem" />
+</android.support.constraint.ConstraintLayout>
